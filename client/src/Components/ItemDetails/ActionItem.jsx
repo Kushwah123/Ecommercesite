@@ -59,7 +59,7 @@ const ActionItem = ({ product }) => {
 
     const addItemToCart = () => {
         dispatch(addToCart(id, quantity));
-        navigate.push('/cart');
+        navigate('/cart');
     }
 
     return (

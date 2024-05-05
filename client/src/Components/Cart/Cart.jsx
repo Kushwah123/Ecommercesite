@@ -7,6 +7,7 @@ import TotalView from './TotalView';
 import EmptyCart from './EmptyCart';
 import { post } from '../../utils/paytm';
 import { payUsingPaytm } from '../../service/api';
+import { useParams } from 'react-router-dom';
 
 const useStyle = makeStyles(theme => ({
     component: {
@@ -52,12 +53,14 @@ const Cart = ({ match, history }) => {
     const { cartItems } = cartDetails;
 
     const dispatch = useDispatch();
-    
-    useEffect(() => {
-        if(cartItems && match.params.id !== cartItems.id)   
-            dispatch(addToCart(match.params.id));
-        console.log(cartItems);
-    }, [dispatch, cartItems, match]);
+    // const { id } = useParams();
+    const { id } = useParams();
+    console.log(id)
+    // useEffect(() => {
+    //     // if(cartItems && match.params.id !== cartItems.id)   
+    //         dispatch(addToCart(id));
+    //     console.log(cartItems);
+    // }, [dispatch, cartItems, id]);
 
     const removeItemFromCart = (id) => {
         dispatch(removeFromCart(id));
