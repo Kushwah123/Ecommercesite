@@ -14,6 +14,8 @@ A full-stack Flipkart Clone built with modern web technologies that replicates c
 - 📸 Product Images Upload Support
 - 🔎 Product Search by Name / Category
 - 💬 Toast Notifications and Form Validations
+- <img width="1900" height="880" alt="filpProduct" src="https://github.com/user-attachments/assets/1ee63ca5-db64-46dd-b83b-c93863a9df02" />
+
 
 ---
 
@@ -32,6 +34,7 @@ A full-stack Flipkart Clone built with modern web technologies that replicates c
 - JWT Authentication
 - Multer (for image uploads)
 - Bcrypt.js (for password hashing)
+<img width="1894" height="898" alt="FilpProduct-Card" src="https://github.com/user-attachments/assets/bdf30bda-2070-4897-acfa-c357569989cc" />
 
 ---
 
